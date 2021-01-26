@@ -1,0 +1,106 @@
+   /* Style the top navigation bar */
+   .navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+  }
+
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color:  white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right; /* Float a link to the right */
+  }
+
+  /* Change color on hover/mouse-over */
+  .navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+  }
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    color: #3D3D3D;
+}
+
+h1 {
+    font-style: italic;
+    color: #FF6F00;
+}
+
+h2 {
+    clear: both;
+}
+
+em {
+    font-weight: bold;
+}
+
+video {
+    clear: both;
+    display: block;
+}
+
+section {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+header, footer {
+    clear: both;
+}
+
+.removed {
+    display: none;
+}
+
+.invisible {
+    opacity: 0.2;
+}
+
+.note {
+    font-style: italic;
+    font-size: 130%;
+}
+
+.videoView, .classifyOnClick {
+    position: relative;
+    float: left;
+    width: 48%;
+    margin: 2% 1%;
+    cursor: pointer;
+}
+
+    .videoView p, .classifyOnClick p {
+        position: absolute;
+        padding: 5px;
+        background-color: rgba(255, 111, 0, 0.85);
+        color: #FFF;
+        border: 1px dashed rgba(255, 255, 255, 0.7);
+        z-index: 2;
+        font-size: 12px;
+        margin: 0;
+    }
+
+.highlighter {
+    background: rgba(0, 255, 0, 0.25);
+    border: 1px dashed #fff;
+    z-index: 1;
+    position: absolute;
+}
+
+.classifyOnClick {
+    z-index: 0;
+}
+
+    .classifyOnClick img {
+        width: 100%;
+    }
